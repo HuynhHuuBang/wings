@@ -1,0 +1,39 @@
+name: Wings 
+main: HHB\Wings\Main
+author: Huỳnh Hữu Bằng
+version: 0.1_beta
+api: 2.0.0
+
+commands:
+ wings:
+  aliases: [wings]
+  description: wings Commands.
+  permission: wings
+
+permissions:
+ wings:
+  default: false
+  description: Quyền chỉ huy của wings.
+  children:
+   wings.help:
+    default: false
+    description: Cho phép sữ dụng commands help .
+   wings.off:
+    default: false
+    description: Cho phép sữ dụng lệnh tắt wings.
+   wings.list:
+    default: false
+    description: Cho phép sữ dụng lệnh list wings.
+    wings.on:
+    default: false
+    description: Cho phép sữ dụng lệnh mở wings.
+    children:
+   wings.on.slime:
+    default: false
+    description: Cho phép sữ dụng mở wings slime .
+   wings.on.lava:
+    default: false
+    description: Cho phép sữ dụng mở wings lava.
+   wings.on.water:
+    default: false
+    description: Cho phép sữ dụng mở wings water .
